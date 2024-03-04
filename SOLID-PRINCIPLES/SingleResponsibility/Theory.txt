@@ -1,0 +1,40 @@
+Single responsibility Principle 
+ 
+  Defination :-
+      A class should have one and only one reason to change, meaning that a class should have only one job.
+
+
+  Why we need Single Responsibility Principle ? 
+
+    - It helps in creating maintainable, understandable, and flexible code.  
+
+     1 . Code Maintainability:
+
+          When a class has only one responsibility, any changes related to that
+          responsibility will only affect that class. This makes it easier to understand and maintain the code,
+          as you don't have to navigate through unrelated code to make changes.
+
+     2. Code Reusability: 
+
+          Classes with single responsibilities are often more reusable 
+          in other parts of the application or in different applications, as they are more focused 
+          and less coupled with other parts of the system.
+
+     3. Testing: 
+
+          Classes with single responsibilities are easier to test,
+          as you can write tests specifically for that responsibility. This improves the reliability of the code 
+          and makes it easier to identify and fix bugs.
+
+     4. Readability and Understandability: 
+         
+         Code that adheres to SRP is typically more readable and understandable, 
+         as each class has a clear and specific purpose. This makes it easier for developers to understand 
+         the codebase, especially when working in teams or when revisiting the code after some time.
+
+     5. Scalability: 
+         Classes with single responsibilities are often more scalable, 
+         as they can be easily extended or modified to accommodate new requirements without affecting
+         other parts of the system.
+
+Overall, SRP helps in creating more maintainable, flexible, and understandable code, which leads to better software quality and easier development process.
