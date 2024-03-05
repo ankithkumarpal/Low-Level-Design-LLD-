@@ -1,0 +1,52 @@
+Dependency Inversion Principle : 
+
+     Defination : 
+        
+        The Dependency Inversion Principle (DIP) suggests that classes should depend on abstractions 
+        (interfaces or abstract classes) rather than concrete implementations. This means that high-level 
+        modules should not depend on low-level modules. Instead, both should depend on abstractions.
+    
+
+     How to identify piece of code is violating Dependency principle ? 
+
+        If a code contains below points then it is violating: 
+
+        1. Classes directly instantiate dependencies: 
+              
+              If you see classes directly creating instances of their dependencies using the new keyword, it's a sign of a violation.
+              For example, var service = new SomeService();.
+
+        2. High-level modules depend on low-level modules: 
+              
+              If a high-level module (e.g., a business logic class) depends directly on a low-level module 
+              (e.g., a data access class), it's a violation.
+
+        3. Tight coupling between classes: 
+        
+              If there is tight coupling between classes, meaning changes in one class require changes in another, 
+              it might indicate a violation.
+
+        4. Lack of interfaces or abstractions: 
+         
+              If classes depend directly on concrete implementations rather than interfaces or abstractions, 
+              it's a sign of a violation.
+
+        
+     How can we achieve this ? 
+         
+        1. Use interfaces or abstract classes: 
+               
+               Define interfaces or abstract classes to represent dependencies, rather than using concrete 
+               classes directly.
+
+        2. Implement dependency injection: 
+        
+               Use dependency injection (DI) to inject dependencies into classes, rather than creating them within 
+               the classes themselves. This allows you to easily change the implementation of dependencies without 
+               modifying the classes that use them.
+
+
+        3. Apply the Single Responsibility Principle (SRP): 
+        
+               Ensure that classes have only one reason to change by separating their responsibilities. This can help in 
+               creating smaller, more focused interfaces and abstractions.
