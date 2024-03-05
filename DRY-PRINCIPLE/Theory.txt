@@ -1,0 +1,40 @@
+
+DRY (Don't Repeat Yourself) : 
+
+    Defination: 
+
+        The DRY (Don't Repeat Yourself) principle is a software development principle that states 
+        that duplication in logic should be eliminated by abstracting common code into reusable modules 
+        or functions. The goal of the DRY principle is to reduce repetition, improve code readability, 
+        and make maintenance and updates easier by ensuring that a single source of truth exists for each 
+        piece of knowledge or logic in a system.
+         
+        ** In simple terms ** 
+        
+        The DRY principle means you shouldn't write the same code over and over. 
+        Instead, you should write it once and reuse it wherever you need it. 
+        This helps make your code shorter, easier to understand, and easier to change in the future.
+
+
+    Why do we need it ? 
+
+        1. Reduced duplication: 
+
+              By reusing code instead of repeating it, we can make our programs shorter and easier to understand. 
+              This reduces the chances of errors and makes it easier to maintain our code.
+
+        2. Easier maintenance: 
+
+              When we need to make a change to our code, it's much easier to do so if we only have to make the change 
+              in one place. If the same code is repeated in multiple places, we have to make the same change in each 
+              place, which increases the chances of making a mistake.
+
+        3. Improved readability: 
+        
+              Code that is not repeated is generally easier to read and understand. When we see the same code 
+              repeated, it can be confusing and make it harder to understand what the code is doing.
+
+        4. Faster development: 
+              
+              Reusing code allows us to write programs more quickly, since we don't have to write the same code over and over again.
+              This can be especially helpful when working on large projects with many lines of code.
