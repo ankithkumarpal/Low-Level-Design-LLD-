@@ -1,0 +1,71 @@
+Liskov-Substitution principle : 
+
+   Defination : 
+      
+      states that objects of a superclass should be replaceable with objects 
+      of its subclasses without affecting the correctness of the program.
+
+      In simpler terms, this means that you should be able to use a subclass wherever 
+      you can use its superclass, and the program should still work correctly. 
+      This allows you to extend the behavior of your classes without changing the existing code 
+      that uses those classes.
+
+
+
+   How to identify piece of code is violating Dependency principle ?
+
+      You can look for the following signs:
+
+         1. Subclass behavior that contradicts superclass behavior: 
+              
+              If a subclass behaves in a way that is not consistent with the behavior expected from its 
+              superclass, it violates the LSP. For example, if a subclass overrides a method from the 
+              superclass and changes its behavior in a way that is unexpected or incompatible with the 
+              superclass behavior, it violates the LSP.
+
+         2. Subclass methods that are not applicable to superclass objects: 
+              
+              If a subclass introduces methods that are not applicable to objects of the superclass, 
+              it violates the LSP. Subclasses should not introduce new behaviors that are not supported by 
+              the superclass.
+
+         3.Subclass methods that violate preconditions or postconditions of superclass methods: 
+               
+               If a subclass method violates the preconditions (conditions that must be true before the method
+               is called) or postconditions (conditions that must be true after the method is called) of a superclass 
+               method, it violates the LSP. Subclasses should not weaken or strengthen the contracts established by the superclass methods.
+
+         4. Subclass methods that throw exceptions not thrown by superclass methods: 
+
+              If a subclass method throws exceptions that are not thrown by the corresponding superclass method, 
+              it violates the LSP. 
+              Subclasses should not introduce new exceptions that are not part of the superclass contract.
+
+         5.Inconsistent method signatures between superclass and subclass: 
+               
+               If a subclass method has a different signature (e.g., different parameters or return types) 
+               than the corresponding superclass method, it violates the LSP. Subclasses should maintain the 
+               same method signatures as their superclasses to ensure substitutability.
+    
+
+    How can we achieve this ? 
+
+         1. Ensure subclass behavior is consistent with superclass behavior: 
+
+                Subclasses should extend the behavior of the superclass, not contradict it. They should be 
+                substitutable for instances of the superclass without changing the expected behavior of the program.
+
+         2. Maintain method signatures and contracts: 
+                
+                Subclasses should maintain the same method signatures as their superclasses and should not introduce 
+                new preconditions, postconditions, or exceptions that are not part of the superclass contract.
+
+         3. Avoid overriding methods to change their behavior: 
+                
+                If you need to change the behavior of a superclass method in a subclass, consider using a different 
+                method name or creating a new subclass instead of overriding the method.
+
+         4.Use interfaces and abstract classes to define contracts: 
+                
+                Define interfaces or abstract classes that specify the contract for subclasses to follow. 
+                This helps ensure that subclasses adhere to the LSP by providing a clear definition of expected behavior.
