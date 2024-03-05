@@ -1,3 +1,5 @@
+// for better understanding first read theory.txt -> ruleViolation.java -> this
+
 interface IPrinter
 {
     void Print(string document);
