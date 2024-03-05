@@ -1,0 +1,43 @@
+YAGNI ( YOU AIN'T GONNA NEED IT) :
+  
+     Defination : 
+        
+        The YAGNI principle is an acronym for "You Aren't Gonna Need It." This principle is often 
+        applied in Agile software development. It means that we should not add features or functionality
+        to our software that we don't currently need. This can help simplify our code and make it more 
+        robust since we are not adding unnecessary complexity. It also helps us save time and money 
+        since we aren't wasting our resources developing features that we may never use.
+
+
+        This principle is based on the idea that adding unnecessary features or capabilities to a software 
+        product increases complexity, which can lead to bugs, higher maintenance costs, and decreased overall 
+        quality.
+
+        In essence, YAGNI encourages developers to focus on implementing only the features that are necessary 
+        for the current requirements, rather than trying to anticipate future needs. This helps keep the codebase 
+        simple, lean, and easier to maintain.
+
+    Why do we need it ? 
+        
+        1. Focus on immediate requirements: 
+              
+              By following the YAGNI principle, we can focus our efforts on implementing the 
+              features that are necessary for the current requirements. This helps us deliver 
+              value to users more quickly and efficiently.
+
+        2. Avoiding over-engineering: 
+              
+              Trying to anticipate future requirements and adding functionality that may not be 
+              needed can lead to over-engineering. This can result in code that is more complex, 
+              harder to maintain, and more prone to bugs.
+
+        3.Reduced development time: 
+              By implementing only the features that are needed now, we can reduce the time and effort 
+              spent on development. This can lead to faster delivery of software and a more responsive 
+              development process.
+
+        4. Easier maintenance: 
+              
+              Keeping the codebase simple and focused on current requirements makes it easier to maintain 
+              and modify in the future. This can reduce the risk of introducing bugs when making changes and 
+              improve the overall quality of the code.

@@ -1,0 +1,16 @@
+KISS (KEEP IT SIMPLE , STUPID) : 
+
+     Defination : 
+        
+         The KISS (Keep It Simple, Stupid) principle is a design principle in software development 
+         that emphasizes the importance of simplicity. It suggests that systems should be kept as 
+         simple as possible, avoiding unnecessary complexity. The KISS principle is based on the idea 
+         that simplicity leads to better usability, reliability, and maintainability.
+
+
+         ** In simple terms ** 
+
+         In simple terms, the KISS principle means that things work best when they are kept simple rather 
+         than made complicated. It suggests that you should strive for simplicity in design and avoid 
+         unnecessary complexity. This principle is often used in software development to encourage developers 
+         to write code that is easy to understand, maintain, and use.
