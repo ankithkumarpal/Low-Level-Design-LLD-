@@ -1,0 +1,58 @@
+Interface Segregation Principle (ISP) : 
+
+     Defination : 
+        
+        Clients should not be forced to depend on interfaces they do not use.
+
+        It suggests breaking up big interfaces into smaller, more specific ones 
+        so that classes only need to implement the parts they actually use. This helps keep classes 
+        focused and prevents them from having to implement methods they don't need.
+     
+     How to identify a piece of code is violating the law (ISP) ? 
+
+        -> If a class is implementing unnecessary methods then it is violating the rule ISP.
+
+        1. Large interfaces: 
+
+            If an interface has many methods and not all classes implementing it need all those methods,
+            it may be a sign of a violation.
+
+        2. Empty method implementations: 
+            
+            If a class implementing an interface has empty method implementations or 
+            throws exceptions for certain methods, it might indicate that the class doesn't actually 
+            need those methods.
+
+        3. Conditional logic based on interface methods: 
+           
+            If a class implementing an interface has conditional logic to check which methods of the interface
+            to call, it could be a sign that the interface is too large and should be split.
+
+        4. Dependencies on irrelevant interfaces: 
+           
+            If a class has dependencies on interfaces with methods it doesn't use, it may indicate a violation
+            of ISP.
+
+
+    How can we achieve this ? 
+       
+        1. Identify interfaces with multiple responsibilities: 
+             
+             Look for interfaces that have multiple methods, some of which are not relevant to all implementing classes.
+
+        2. Create smaller, more focused interfaces: 
+        
+             Split the large interfaces into smaller, more specific interfaces, each representing a single responsibility or behavior.
+
+        3. Implement interfaces selectively: 
+           
+             Have classes implement only the interfaces that are relevant to them and that they actually use.
+
+        4. Use composition: 
+        
+             using composition means that instead of making a class implement an interface that has methods it doesn't need, 
+             you create a separate class that has those methods and then include an instance of that class inside your original class.
+
+        5. Refactor existing code: 
+          
+             If you have existing code that violates ISP, refactor it to use the new, smaller interfaces.
