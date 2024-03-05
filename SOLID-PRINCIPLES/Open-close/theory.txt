@@ -2,6 +2,55 @@ Open-closed Principle (OCP) :
    
    Defination : 
 
-       Objects or entities should be open for extension but closed for modification.
+     -> Objects or entities should be open for extension but closed for modification.
        This means that a class should be extendable without modifying the class itself.
+
+   How can we acheive this ? 
        
+    -> One common way to achieve this is by using abstraction, means inheriting base class or extending a interface 
+      For example, you can define interfaces or base classes that specify the behavior that 
+      can be extended, and then create new implementations of these interfaces or classes to add 
+      new functionality.
+
+    
+    How to identify a piece of code is violating open-close principle ? 
+
+        Ask yourself : 
+
+        - Can I add new behavior to this class without changing its code? 
+          If the answer is no, then the class may be violating the OCP.
+
+        - Do I need to modify this class to add a new feature? 
+          If the answer is yes, then the class is likely violating the OCP.
+
+
+        **Some indicators that your code might be violating the OCP**:-
+
+           1. Modifying Existing Classes: 
+
+                If you find yourself frequently modifying the implementation of existing classes
+                to accommodate new functionality, it could indicate a violation of the OCP. 
+                Instead, you should be able to extend the behavior without modifying existing code.
+
+           2. Conditional Statements for Type Checking: 
+
+                If you have conditional statements checking the type of an object to decide its behavior,
+                this can be a sign of a violation. Instead, consider using polymorphism to allow different 
+                types to be treated uniformly.
+
+           3. Adding Switch Statements: 
+
+                Adding switch statements or if-else chains to handle different types or 
+                behaviors can indicate a violation. Instead, consider using polymorphism or design patterns 
+                like the Strategy pattern to handle varying behaviors.
+
+           4. Violating Liskov Substitution Principle: 
+               
+               If you find that subclasses cannot be substituted for their base classes without affecting 
+               the behavior of the system, it may indicate a violation of the OCP.
+
+           5. Difficulty in Extending the System: 
+               
+               If extending the system with new features requires significant changes to existing code, 
+               it might indicate a violation. In a well-designed system following the OCP, extending should be 
+               relatively easy and require minimal changes to existing code.
