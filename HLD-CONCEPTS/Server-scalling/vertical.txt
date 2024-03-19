@@ -26,7 +26,8 @@ HOW TO ACHEIVE VERTICAL SCALLING ?
     
     Choose the Right Hardware:
 
-     -> Select hardware components that can be upgraded to meet your performance requirements. This could include upgrading the CPU, adding more RAM, replacing the hard drive with an SSD, or upgrading the network interface card.
+     -> Select hardware components that can be upgraded to meet your performance requirements. This could include upgrading the CPU, 
+        adding more RAM, replacing the hard drive with an SSD, or upgrading the network interface card.
         
     Plan for Downtime:
 
