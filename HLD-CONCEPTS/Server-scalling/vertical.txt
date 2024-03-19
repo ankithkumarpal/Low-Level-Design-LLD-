@@ -1,5 +1,5 @@
 
-VERTICAL SCALLING : 
+VERTICAL SCALLING (SCALE IN): 
     
     1. Vertical scaling involves upgrading the existing resources, such as increasing the CPU, RAM, or storage capacity 
        of a single machine.
