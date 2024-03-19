@@ -1,6 +1,6 @@
 References : 
 
-     UniqueIdGenerator : https://completedesigninterviewcourse.com/system-design-generating-unique-identifiers-distributed-systems-twitter-snowflake-id/
+     UniqueIdGenerator : (https://completedesigninterviewcourse.com/system-design-generating-unique-identifiers-distributed-systems-twitter-snowflake-id/)
 
 
 UNIQUE ID GENERATOR  : 
