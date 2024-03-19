@@ -1,3 +1,2 @@
 Consisten-Hashing  : https://towardsdatascience.com/system-design-consistent-hashing-43ddf48d2d32#:~:text=Consistent%20hashing%20consists%20of%20hashing,has%20its%20own%20hash%20range.
-
-                     Read System Desing interview book
+UniqueIdGenerator : https://completedesigninterviewcourse.com/system-design-generating-unique-identifiers-distributed-systems-twitter-snowflake-id/
