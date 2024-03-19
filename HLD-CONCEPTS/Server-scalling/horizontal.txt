@@ -1,0 +1,66 @@
+
+
+HORIZANTAL SCALLING (SCLAE OUT) : 
+
+    1. Horizontal scaling involves adding more machines or instances to your existing pool of resources.
+    
+    2. In a horizontal scaling approach, the workload is distributed across multiple machines, and each 
+       machine handles a portion of the overall load.
+    3. Horizontal scaling is often used to improve the capacity and performance of a system by adding more resources 
+       in a linear manner.
+    4. This approach requires a way to distribute the workload effectively, such as load balancing, to ensure that 
+       each machine receives a fair share of the load.
+    5. Horizontal scaling is typically more cost-effective and provides better fault tolerance compared to vertical scaling.
+
+
+HOW TO ACHEIVE HORIZANTAL SCALLING ? 
+    
+    Identify Bottlenecks: Determine which parts of your system are experiencing performance bottlenecks or resource constraints.
+
+    Decide What to Scale: Decide which components of your system you want to scale horizontally. This could include web servers, 
+                          application servers, databases, or other components that are limiting scalability.
+
+    Set Up Load Balancing: Implement a load balancer to distribute incoming traffic across multiple instances of your scaled 
+                           component. This ensures that the workload is evenly distributed and helps prevent overload on any 
+                           single instance.
+
+    Add More Instances: Increase the number of instances of the component you are scaling horizontally. This could involve launching 
+                        more virtual machines, containers, or adding more physical machines to your infrastructure.
+
+    Configure Auto-Scaling: Set up auto-scaling to automatically add or remove instances based on predefined metrics, 
+                            such as CPU utilization, memory usage, or incoming traffic. This helps your system adapt to 
+                            changing workload demands.
+
+    Monitor and Adjust: Monitor the performance of your horizontally scaled system and adjust the number of instances as 
+                        needed to maintain optimal performance and efficiency.
+
+
+LIMITAIONS : 
+
+    1. Complexity: Implementing and managing a horizontally scaled system can be more complex than a vertically scaled one. 
+                   You need to ensure that all instances are synchronized and communicate effectively, which can be challenging.
+
+    2. Cost: While horizontal scaling can be more cost-effective than vertical scaling in some cases, it can also be 
+             expensive, especially if you need to add a large number of instances to handle increased load.
+
+    3. Data Consistency: Maintaining data consistency across multiple instances can be challenging. You need to ensure that 
+                         updates are propagated correctly and that all instances have access to the most up-to-date data.
+
+    4. Latency: With horizontal scaling, requests may need to travel longer distances to reach the appropriate instance, 
+                which can increase latency compared to a vertically scaled system where everything is on a single machine.
+
+    5. Resource Management: Managing resources across multiple instances can be complex. You need to ensure that each 
+                            instance has enough resources to handle its workload without wasting resources.
+
+    6. Scaling Limits: While horizontal scaling can provide significant scalability, there is a limit to how far you can scale 
+                       horizontally. At some point, adding more instances may not provide additional benefits.
+
+    7. Network Bottlenecks: Increasing the number of instances can lead to increased network traffic, which can create bottlenecks 
+                            and impact performance.
+
+    8. State Management: Managing stateful data, such as user sessions or cached data, can be challenging in a horizontally scaled 
+                         system. You need to ensure that state is synchronized across all instances.
+
+    Despite these limitations, horizontal scaling remains a popular choice for many applications due to its ability to provide scalability, 
+    fault tolerance, and performance benefits. It's important to carefully consider your application's requirements and design a scaling strategy 
+    that meets your needs.
