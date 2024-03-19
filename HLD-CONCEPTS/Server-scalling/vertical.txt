@@ -1,0 +1,85 @@
+
+VERTICAL SCALLING : 
+    
+    1. Vertical scaling involves upgrading the existing resources, such as increasing the CPU, RAM, or storage capacity 
+       of a single machine.
+
+    2. In a vertical scaling approach, the entire workload is handled by a single machine, but with increased capacity.
+
+    3. Vertical scaling is often used when a system reaches its limits in terms of performance or capacity and needs 
+       a more powerful machine to handle the load.
+
+    4. This approach can be costly, as upgrading hardware components can be expensive.
+
+    5. Vertical scaling has limitations in terms of scalability and fault tolerance, as a single machine becomes a potential 
+       point of failure.
+
+
+HOW TO ACHEIVE VERTICAL SCALLING ? 
+    
+    Achieving vertical scaling involves upgrading the existing resources of a single machine to handle increased load or improve performance. 
+    Here are the key steps to achieve vertical scaling:
+
+    Identify Resource Bottlenecks:
+
+     -> Identify the resources that are limiting the performance of your system, such as CPU, memory, disk I/O, or network bandwidth.
+    
+    Choose the Right Hardware:
+
+     -> Select hardware components that can be upgraded to meet your performance requirements. This could include upgrading the CPU, adding more RAM, replacing the hard drive with an SSD, or upgrading the network interface card.
+        
+    Plan for Downtime:
+
+     -> Keep in mind that vertical scaling may require downtime, as you will need to shut down the machine to perform hardware upgrades.
+   
+    Upgrade Hardware:
+
+     -> Shutdown the machine and physically upgrade the hardware components. Follow the manufacturer's instructions for safely upgrading the hardware.
+    
+    Configure the Operating System:
+
+     -> After upgrading the hardware, configure the operating system to recognize and utilize the new hardware components. 
+        This may involve updating drivers or adjusting system settings.
+    
+    Test and Validate:
+
+     -> Test the upgraded system to ensure that it can handle the increased load and that the performance has improved as 
+        expected. Use benchmarking tools to measure performance before and after the upgrade.
+    
+    Monitor Performance:
+
+     -> Monitor the performance of the system after the upgrade to ensure that it is functioning as expected. 
+        Keep an eye on resource utilization and performance metrics to identify any issues that may arise.
+    
+    Consider Redundancy and High Availability:
+
+     -> If high availability is a requirement, consider implementing redundancy and failover mechanisms to ensure that the 
+        system remains operational in case of hardware failure.
+
+
+    Vertical scaling can provide a quick and effective way to improve the performance of a system, but it has limitations 
+    in terms of scalability and cost-effectiveness compared to horizontal scaling. Consider your long-term scalability 
+    requirements and architectural design when deciding between vertical and horizontal scaling strategies.
+
+
+LIMITAIONS : 
+   
+    Hardware Limitations: There is a maximum limit to the resources (CPU, memory, storage, etc.) that a single machine can provide. 
+                          Once this limit is reached, further scaling is not possible, and you may encounter performance bottlenecks.
+
+    Cost: Upgrading hardware components to increase capacity can be expensive, especially for high-performance servers or specialized hardware.
+
+    Downtime: Vertical scaling often requires shutting down the machine to perform hardware upgrades, leading to downtime and potential 
+              disruption to services.
+
+    Limited Fault Tolerance: A single machine becoming a potential point of failure can lead to reduced fault tolerance compared to 
+                             horizontally scaled systems, where workload is distributed across multiple machines.
+
+    Scalability Constraints: Vertical scaling may not be suitable for applications that require dynamic scalability, 
+                             as there is a limit to how much a single machine can scale.
+
+    Limited Flexibility: Vertical scaling ties your system's scalability to the capacity of a single machine, 
+                         limiting your ability to scale different components independently.
+
+    Performance Degradation: In some cases, simply adding more resources to a single machine may not lead to proportional 
+                             performance improvements due to hardware limitations or bottlenecks elsewhere in the system.
