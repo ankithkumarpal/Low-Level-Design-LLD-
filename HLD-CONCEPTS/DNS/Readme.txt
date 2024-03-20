@@ -19,7 +19,7 @@
               DNS servers are like internet directories that store information about domain names and their corresponding IP addresses. When you type a domain name into your web browser, 
               your computer sends a request to a DNS server to find the IP address associated with that domain name.
 
-        DNS Server Involved in processes of loading a page ? 
+         DNS Servers Involved in processes of loading a page ? 
              
              Root DNS Servers: 
                   
