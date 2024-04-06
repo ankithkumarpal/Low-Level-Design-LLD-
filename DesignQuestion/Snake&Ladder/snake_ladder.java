@@ -74,7 +74,8 @@ class player {
     Cordinate currentPosition ; 
     boolean turn ; 
 
-    player(Cordinate currPosition) {
+    player(int id , Cordinate currPosition) {
+        this.id = id;
         this.currentPosition = currPosition;
     }
 
@@ -180,7 +181,7 @@ public class snake_ladder {
         int noOfDice = scn.nextInt();
 
 
-        List<player> players = new ArrayList<>();
+        Queue<player> players = new ArrayDeque<>();
         List<Snake> snakes = new ArrayList<>();
         List<Ladder> ladders = new ArrayList<>();
         List<Dice> dices = new ArrayList<>();
@@ -193,7 +194,7 @@ public class snake_ladder {
 
         for(int i = 0;i<noOfplayers;i++){
             Cordinate cordinate = new Cordinate(0, 0);
-            players.add(new player(cordinate));
+            players.offer(new player(i , cordinate));
         }
 
         for(int i = 0;i<noOfSnakes;i++) {
@@ -235,6 +236,7 @@ public class snake_ladder {
             ladders.add(ladder);
         }
         Cell [][] board = new Board(size, snakes, ladders).construct();
+
         
         player winner = play(size , board , players , dices);
         System.out.println("The winner");
@@ -242,17 +244,15 @@ public class snake_ladder {
      }
 
 
-     static player play(int size , Cell[][] board , List<player> players , List<Dice> dices){
+     static player play(int size , Cell[][] board ,  Queue<player> playerTurn , List<Dice> dices){
         
-        int turn = 0;
         while(true) {
             System.out.println("New Turn : ");
-            player player = players.get(turn);
+            player player = playerTurn.remove();
             int diceSum = 0;
             for(int i = 0;i<dices.size();i++){
                 int  val = dices.get(i).roll();
                 diceSum = diceSum + val;
-                System.out.println(i + " " +  "dice" + val);
             }
 
             int x = player.currentPosition.x + (player.currentPosition.y + diceSum)/10;
@@ -274,7 +274,9 @@ public class snake_ladder {
 
             if(x ==  board.length -1 && y == board[0].length - 1) return player;
 
-            turn = (turn + 1) % players.size();
+            System.out.println(playerTurn.size());
+
+            playerTurn.add(player);
         }
 
     }
