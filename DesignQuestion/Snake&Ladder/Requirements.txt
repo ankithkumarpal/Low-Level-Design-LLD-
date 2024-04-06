@@ -1,0 +1,10 @@
+
+1. multiplayer game 
+2. Customizable board in terms of snake and ladder placement and board size 
+3. Customizable in terms of no of dice used 
+4. When game board loads it should be  : 
+    - load the configured board size ; 
+    - load the configured snake and ladder ; 
+    - load the configured number of dice ; 
+    - load the no of player will play and all player should be at the starting location 
+
