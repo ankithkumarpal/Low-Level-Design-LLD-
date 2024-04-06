@@ -14,7 +14,6 @@ class Cordinate {
     }
 }
 
-
 class Cell  {
     
     int id; 
